@@ -94,7 +94,7 @@ app.get("/", (req, res) => {
      res.send("Server Working");
 });
 
-// ✅ SPA Catch-all - Use middleware instead of app.get('*')
+// SPA Catch-all - Use middleware instead of app.get('*')
 app.use((req, res, next) => {
      // Skip API routes
      if (req.path.startsWith('/api/')) {
